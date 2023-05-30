@@ -1,0 +1,234 @@
+.table_container {
+  width: 100%;
+  max-width: 1000px;
+  margin:30px auto;
+  /* overflow-y: hidden; */
+}
+
+.table_container .table_header_container .table_header_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+.table_container .table_header_container .table_header_content .row{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.table_container .table_header_container .table_header_content .row h4{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.table_container .table_header_container .table_header_content p{
+    font-size: 15px;
+    color: #5A616A;
+}
+
+.table_container .table_header_container .table_header_content .row h4 span{
+    color: #5A616A;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.table_container .table_header_container .table_header_content:nth-of-type(odd){
+    border-bottom: 1px solid #D7D8DA;
+}
+
+.table_container .table_header_contaianer .table_header_content button{
+    padding: 5px 30px;
+}
+
+
+
+.table_container table {
+  width: 100%;
+  /* width: max-content; */
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.table_container .table_wrapper{
+    width: 100%;
+    height: max-content;
+    overflow-x: auto;
+    overflow-y: visible;
+
+}
+
+
+.table_wrapper::-webkit-scrollbar{
+    background: #E6E8EA;
+    height: 8px;
+}
+
+.table_wrapper::-webkit-scrollbar-thumb{
+    background: #6F80A0;
+    border-radius: 50px; 
+}
+
+.table_container table thead tr{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #EEF0F4;
+
+}
+
+.table_container table tr th{
+    border: 1px solid white;
+    background: #EEF0F4;
+}
+
+.table_container table tr .dropdown .custom_select *{
+    font-size: 12px;
+    text-align: center !important;
+
+}
+
+.table_container table tr .dropdown .custom_select .select-selected{
+    background-color: #EBEEF3;
+    border-color: #D7D8DA;
+    padding: 6px 10px;
+    justify-content: center;
+}
+
+.table_container table tr .dropdown .custom_select .select-selected i{
+    display: none;
+}
+
+.table_container table tr .dropdown .custom_select .select-items{
+    top: 30px;
+}
+
+.table_container table tr:nth-of-type(even){
+    background: #EEF0F4;
+
+}
+
+
+
+
+
+
+.table_container table tr td,
+.table_container table tr th{
+    padding: 10px;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: #222222;
+    position: relative;
+}
+
+
+.table_container table tr td:nth-child(1) ,
+.table_container table tr th:nth-child(1) {
+   padding: 0;
+}
+
+.table_container table tr:nth-child(3n) .input_container .checkmark,
+.table_container table tr:nth-child(3n+2) .input_container .checkmark,
+.table_container table tr:nth-child(3n+2) .input_container .checkmark + .table_container table tr .input_container .checkmark{
+    background-color: #DDE0E5;
+    border-color: #DDE0E5;
+}
+
+
+
+.card:nth-child(3n+1),
+.card:nth-child(3n+2) {
+  background-color: gray;
+}
+
+.card:nth-child(3n) {
+  background-color: white;
+}
+
+
+.table_container table tr td:nth-child(1) .input_container,
+.table_container table tr th:nth-child(1) .input_container{
+    transform: translateX(10px);
+}
+
+
+
+.table_container table tr th{
+    font-weight: 500;
+}
+
+.table_container table tr td p{
+    width: 100%;
+}
+
+.table_container table tr td:not(.content),
+.table_container table tr th{
+    white-space: nowrap;
+}
+
+.table_container table tr .content{
+    width: 100%;
+    min-width: 400px;
+}
+
+
+.table_container table tbody tr,
+.table_container table tbody tr td{
+    padding: 10px;
+}
+.table_container table tbody tr td .status{
+    padding: 2px 10px;
+    border-radius: 50px;
+}
+
+.table_container .table_pagination {
+  background: #f1f3f5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+}
+.table_container .table_pagination .pagination_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table_container .table_pagination .pagination_content .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table_container .table_pagination .pagination_content .navigation button {
+  border: none;
+  background-color: transparent;
+  color: #9599a1;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:2px 7px;
+  cursor: pointer;
+}
+
+.table_container .table_pagination .pagination_content .num_container{
+    gap: 20px;
+    margin: 0px 10px;
+}
+
+.table_container .table_pagination .pagination_content .num_container button{
+    font-size: 15px;
+    color: #9599a1;
+}
+
+.table_container .table_pagination .pagination_content .num_container .active{
+    background-color: var(--major_color);
+    border-radius: 4px;
+    color: white;
+}
+

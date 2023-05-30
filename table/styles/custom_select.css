@@ -1,0 +1,86 @@
+.custom_select {
+  position: relative;
+}
+
+.custom_select select {
+  display: none;
+}
+
+.select-selected {
+  background: #ffffff;
+  border: 1px solid #b1b4bb !important;
+  border-radius: 8px;
+  color: #0b101a;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.select-selected::before{
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+}
+
+
+.select-selected {
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.select-items div {
+  padding: 10px;
+}
+
+/* Style items (options): */
+.select-items {
+  border: none;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(54, 54, 54, 0.15);
+  border-radius: 8px;
+  color: #0b101a;
+  top: 100%;
+  top: 38px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  text-align: left;
+  padding: 0 !important;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.select-selected i{
+    color: #5A616A;
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.selected-show i{
+    transform: rotate(180deg);
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: var(--major_color);
+  color: white;
+}
+
+.active{
+    background-color: var(--major_color);
+  color: white;
+}
